@@ -1,0 +1,25 @@
+{
+  "name": "dbase_tech_server",
+  "version": "1.0.0",
+  "description": "neyhhh",
+  "homepage": "https://github.com/saru12ita/FullstackEcommerceProject#readme",
+  "bugs": {
+    "url": "https://github.com/saru12ita/FullstackEcommerceProject/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/saru12ita/FullstackEcommerceProject.git"
+  },
+  "license": "ISC",
+  "author": "saritabk",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
