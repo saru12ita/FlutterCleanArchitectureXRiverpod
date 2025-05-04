@@ -10,6 +10,7 @@ require('dotenv/config');
 
 const app = express();
 const env = process.env;
+const API =env.API_URL;
 
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
@@ -17,8 +18,9 @@ app.use(cors());
 app.options('*', cors());
 
 const authRouter = require('./routes/auth');
+app.use(`${API}/`, authRouter);
 
-app.use('/auth',authRouter);
+
 
 
 // Start the server
