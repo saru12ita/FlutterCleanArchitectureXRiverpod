@@ -2,11 +2,13 @@ const express = require('express');
 
 const router = express.Router();
 
+const authController = require('../controllers/auth');
+
 router.post('/login', (req, res) => {
     return res.status(201).json({'name': 'saru', 'age': 22});
 });
 
-router.post('/register',(req, res)=>{});
+router.post('/register', authController.register);
 
 router.post('/forgot-passwprd',(req, res)=>{});
 
